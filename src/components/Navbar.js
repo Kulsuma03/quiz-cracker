@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
-
+import { BookOpenIcon } from '@heroicons/react/24/solid'
 
 
 export const Navbar = () => {
@@ -18,23 +18,11 @@ export const Navbar = () => {
               title="Company"
               className="inline-flex items-center mr-8"
             >
-              <svg
-                className="w-8 text-sky-900"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+              
+              <BookOpenIcon className="h-6 w-6 text-purple-500"/>
+
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                ABC School
+                Easy Quizzes
               </span>
             </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -44,11 +32,11 @@ export const Navbar = () => {
                   aria-label="Our Book"
                   title="Our Book"
                   className={({ isActive }) => isActive
-                    ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
+                    ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-purple-500"
                   }
                 >
-                  Home
+                  Topics
                 </NavLink>
               </li>
               <li>
@@ -57,11 +45,11 @@ export const Navbar = () => {
                   aria-label="Our Book"
                   title="Our Book"
                   className={({ isActive }) => isActive
-                    ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
+                    ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-purple-500"
                   }
                 >
-                  Academics
+                  Statistics 
                 </NavLink>
               </li>
               <li>
@@ -70,46 +58,21 @@ export const Navbar = () => {
                   aria-label="Book pricing"
                   title="Book pricing"
                   className={({ isActive }) => isActive
-                    ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
+                    ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-purple-500"
                   }
                 >
-                  ClassRoutine
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  aria-label="About us"
-                  title="About us"
-                  className={({ isActive }) => isActive
-                    ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                    : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
-                  }
-                >
-                  About us
+                  Blog
                 </NavLink>
               </li>
             </ul>
           </div>
           <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <NavLink
-                to="/signIn"
-                aria-label="Sign in"
-                title="Sign in"
-                className={({ isActive }) => isActive
-                  ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                  : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400"
-                }
-              >
-                Sign in
-              </NavLink>
-            </li>
+            
             <li>
               <Link
-                to="/signUp"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-700 hover:bg-sky-700 focus:shadow-outline focus:outline-none"
+                to="/"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
@@ -124,7 +87,7 @@ export const Navbar = () => {
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(true)}
             >
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+              <svg className="w-5 text-purple-600" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -150,23 +113,10 @@ export const Navbar = () => {
                         title="Company"
                         className="inline-flex items-center"
                       >
-                        <svg
-                          className="w-8 text-purpleclassName=-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
+                        
+                        <BookOpenIcon className="h-6 w-6 text-purple-500"/>
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Favorite Books
+                        EASY QUIZZES
                         </span>
                       </Link>
                     </div>
@@ -194,11 +144,11 @@ export const Navbar = () => {
                           aria-label="Our Books"
                           title="Our Books"
                           className={({ isActive }) => isActive
-                            ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
+                            ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-purple-500"
                           }
                         >
-                          Home
+                          Topics
                         </NavLink>
                       </li>
                       <li>
@@ -207,11 +157,11 @@ export const Navbar = () => {
                           aria-label="Our Books"
                           title="Our Books"
                           className={({ isActive }) => isActive
-                            ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
+                            ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-purple-500"
                           }
                         >
-                          Academics
+                          Statistics
                         </NavLink>
                       </li>
                       <li>
@@ -220,43 +170,18 @@ export const Navbar = () => {
                           aria-label="Book pricing"
                           title="Book pricing"
                           className={({ isActive }) => isActive
-                            ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
+                            ? "font-medium tracking-wide text-purple-500 transition-colors duration-200 hover:text-purple-500"
+                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-purple-500"
                           }
                         >
-                          ClassRoutine
+                          Blog
                         </NavLink>
                       </li>
-                      <li>
-                        <NavLink
-                          to="/about"
-                          aria-label="About us"
-                          title="About us"
-                          className={({ isActive }) => isActive
-                            ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
-                          }
-                        >
-                          About us
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/signIn"
-                          aria-label="Sign in"
-                          title="Sign in"
-                          className={({ isActive }) => isActive
-                            ? "font-medium tracking-wide text-teal-600 transition-colors duration-200 hover:text-teal-400"
-                            : "font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-400"
-                          }
-                        >
-                          Sign in
-                        </NavLink>
-                      </li>
+                      
                       <li>
                         <Link
-                          to="/signIn"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-pink-400 hover:bg-pink-500 focus:shadow-outline focus:outline-none"
+                          to="/"
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
