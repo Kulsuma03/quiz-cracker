@@ -41,7 +41,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/academics"
+                  to="/statistics"
                   aria-label="Our Book"
                   title="Our Book"
                   className={({ isActive }) => isActive
@@ -153,7 +153,7 @@ export const Navbar = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/academics"
+                          to="/statistics"
                           aria-label="Our Books"
                           title="Our Books"
                           className={({ isActive }) => isActive

@@ -3,6 +3,7 @@ import ErrorPage from "../components/ErrorPage";
 import QuizDetails from "../components/QuizDetails";
 import Root from "../components/Root";
 import Topics from "../components/Topics";
+import TotalQuiz from "../components/TotalQuiz";
 
  const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ import Topics from "../components/Topics";
                 path: '/topic/:id',
                 loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
                 element:<QuizDetails></QuizDetails>
+            },
+            {
+                path: '/statistics',
+                element: <TotalQuiz></TotalQuiz>
             }
         ]
     }
