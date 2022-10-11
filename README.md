@@ -15,10 +15,10 @@
 
 ## Resources & Credits
 
-Tailwind Components ->[Mamba UI](https://www.mambaui.com/components) for more information.
+Tailwind Components ->[Mamba UI](https://www.mambaui.com/components)
 
 ## Other Resources
 
-Icon -> [heroicons](https://heroicons.com/).
+Icon -> [heroicons](https://heroicons.com/)
 
 

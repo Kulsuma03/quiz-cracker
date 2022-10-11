@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import Swal from 'sweetalert2'
 import 'animate.css' 
+import { json } from 'react-router-dom';
 
 const Question = ({ questions }) => {
 
@@ -25,15 +26,18 @@ const Question = ({ questions }) => {
         
         const answer = question.correctAnswer;
         console.log(answer)
-        Swal.fire({
-            title: (`${answer}`),
-            showClass: {
-              popup: 'animate__animated animate__fadeInDown'
-            },
-            hideClass: {
-              popup: 'animate__animated animate__fadeOutUp'
-            }
-          })
+        toast.success(answer, {autoClose: 1000})
+
+
+        // Swal.fire({
+        //     title: `${answer}`,
+        //     showClass: {
+        //       popup: 'animate__animated animate__fadeInDown'
+        //     },
+        //     hideClass: {
+        //       popup: 'animate__animated animate__fadeOutUp'
+        //     }
+        //   })
     }
 
     return (
