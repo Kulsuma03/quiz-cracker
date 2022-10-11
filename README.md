@@ -2,7 +2,7 @@
 
  best education platform for  pupils' self awareness.
 
-
+### Easy Quizzes
 ## Live Link
 
  Hosted in Netlify -> [Easy Quizzes](https://coruscating-naiad-34fa65.netlify.app/blog)
