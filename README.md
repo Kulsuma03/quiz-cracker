@@ -5,7 +5,7 @@
 
 ## Live Link
 
-(https://coruscating-naiad-34fa65.netlify.app/blog)
+ Hosted in Netlify:-> https://coruscating-naiad-34fa65.netlify.app/blog
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
