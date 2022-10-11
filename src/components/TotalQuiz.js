@@ -7,18 +7,18 @@ const TotalQuiz = () => {
     const totalQuizData = useContext(QuizTopicContext);
     console.log(totalQuizData)
     return (
-        <div className='w-9/12 mx-auto'>
-            <h1>quiztotal</h1>
+        <div className='w-9/12 mx-auto '>
+            <h1 className='fond-bold text-purple-500 text-2xl mt-2 underline'> Quizzes Statistics </h1>
             
                 
-               <ResponsiveContainer   width={'100%'} height={400}>
+               <ResponsiveContainer z-index={'-1'}  width={'100%'} height={400}>
                <AreaChart
                     width={500}
                     height={200}
                     data={totalQuizData}
                     syncId="anyId"
                     margin={{
-                        top: 10,
+                        top: 50,
                         right: 30,
                         left: 0,
                         bottom: 0
