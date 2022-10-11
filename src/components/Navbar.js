@@ -28,7 +28,7 @@ export const Navbar = () => {
             <ul className="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <NavLink
-                  to="/home"
+                  to="/topics"
                   aria-label="Our Book"
                   title="Our Book"
                   className={({ isActive }) => isActive
@@ -140,7 +140,7 @@ export const Navbar = () => {
                     <ul className="space-y-4">
                       <li>
                         <NavLink
-                          to="/"
+                          to="/topics"
                           aria-label="Our Books"
                           title="Our Books"
                           className={({ isActive }) => isActive
