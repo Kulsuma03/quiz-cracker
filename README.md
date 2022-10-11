@@ -2,14 +2,10 @@
 
  best education platform for  pupils' self awareness.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Live Link
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+(https://coruscating-naiad-34fa65.netlify.app/blog)
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
