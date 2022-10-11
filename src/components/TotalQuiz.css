@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .chart{
+        width: 95%;
+        margin: auto;
+    }
+    .nav{
+        z-index: 5;
+    }
+    .main-chart{
+        z-index: -1;
+       
+    }
+  }
