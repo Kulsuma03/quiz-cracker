@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "../components/Blog";
 import ErrorPage from "../components/ErrorPage";
 import QuizDetails from "../components/QuizDetails";
 import Root from "../components/Root";
@@ -28,6 +29,10 @@ import TotalQuiz from "../components/TotalQuiz";
             {
                 path: '/statistics',
                 element: <TotalQuiz></TotalQuiz>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
         ]
     }

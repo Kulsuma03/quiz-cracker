@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Easy Quizzes Repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ best education platform for  pupils' self awareness.
 
 ## Available Scripts
 

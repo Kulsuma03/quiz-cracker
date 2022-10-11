@@ -55,7 +55,7 @@ export const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/routine"
+                  to="/blog"
                   aria-label="Book pricing"
                   title="Book pricing"
                   className={({ isActive }) => isActive
@@ -167,7 +167,7 @@ export const Navbar = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/routine"
+                          to="/blog"
                           aria-label="Book pricing"
                           title="Book pricing"
                           className={({ isActive }) => isActive
