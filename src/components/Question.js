@@ -1,7 +1,8 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import { EyeIcon } from '@heroicons/react/24/solid'
-
+import Swal from 'sweetalert2'
+import 'animate.css' 
 
 const Question = ({ questions }) => {
 
@@ -20,6 +21,21 @@ const Question = ({ questions }) => {
         }
     }
 
+    const handleCorrectAns = (question) => {
+        
+        const answer = question.correctAnswer;
+        console.log(answer)
+        Swal.fire({
+            title: (`${answer}`),
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+    }
+
     return (
         <div className='w-11/12 md:w-6/12 mx-auto my-12 bg-gray-100 rounded-xl p-8 shadow-lg'>
 
@@ -29,7 +45,7 @@ const Question = ({ questions }) => {
                 }
             </div>
             <div className='my-11 bg-gray-200 rounded-lg p-5'>
-                <div className='w-6 h-6 ml-auto'>
+                <div onClick={() => handleCorrectAns(questions)}  className='w-6 h-6 ml-auto'>
                     <EyeIcon className="h-6 w-6 text-purple-500" />
                 </div>
                 <div className='grid gap-4 lg:grid-cols-2 mt-9   mx-auto'>
