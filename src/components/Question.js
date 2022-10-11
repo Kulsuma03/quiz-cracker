@@ -60,7 +60,7 @@ const Question = ({ questions }) => {
                         options.map((option, index) =>
                             <div key={index} className='flex my-3  items-start'>
                                 <input className='mt-2 mr-1' type="radio" id={id} name={id} />
-                                <label  className='mt-0' onClick={() => handleAns(option)} >{option}</label>
+                                <label className='mt-0' onClick={() => handleAns(option)} >{option}</label>
                             </div>
                         )
                     }

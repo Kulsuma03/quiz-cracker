@@ -5,7 +5,7 @@
 ### Easy Quizzes
 ## Live Link
 
- Hosted in Netlify -> [Easy Quizzes](https://coruscating-naiad-34fa65.netlify.app/blog)
+ Hosted in Netlify -> [Easy Quizzes](https://coruscating-naiad-34fa65.netlify.app/)
 
 ## is the main work of this project !...
 
