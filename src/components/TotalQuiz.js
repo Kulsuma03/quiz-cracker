@@ -6,7 +6,7 @@ import './TotalQuiz.css'
 
 const TotalQuiz = () => {
     const totalQuizData = useContext(QuizTopicContext);
-    console.log(totalQuizData)
+    // console.log(totalQuizData)
     return (
         <div className='w-9/12 mx-auto chart'>
             <h1 className='fond-bold text-purple-500 text-2xl mt-2 underline'> Quizzes Statistics </h1>
